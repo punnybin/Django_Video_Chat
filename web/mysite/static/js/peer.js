@@ -252,23 +252,19 @@ const constraints = {
     'audio': true
 }
 
-const iceConfiguration = [
-    // Insert STUN Server
-    {
-        "url": [
-            'stun:stun.l.google.com:19302',
-            'stun:stun1.l.google.com:19302',
-            'stun:stun2.l.google.com:19302',
-            'stun:stun.l.google.com:19302?transport=udp',
-                ]
-    },
-    // Insert TURN Server
-    {
-        "url": 'turn:18.182.50.15:3478',
-        "credential": 'Ryusia223',
-        "username": 'punnybin',
-    },
-];
+const iceConfiguration = {
+        iceServers:
+        [
+                {
+                        urls: "turn:43.207.223.197:3478?transport=tcp",
+                        username: "punnybin",
+                        credential: "Ryusia223"
+                },
+                {
+                        urls: "stun:stun.l.google.com:19302"
+                }
+        ]
+};
 
 userMedia = navigator.mediaDevices.getUserMedia(constraints)
     .then(stream => {
