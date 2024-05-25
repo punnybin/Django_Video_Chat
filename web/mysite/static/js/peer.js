@@ -264,7 +264,7 @@ const iceConfiguration = [
     },
     // Insert TURN Server
     {
-        "url": 'turn:220.125.112.167:3478',
+        "url": 'turn:18.182.50.15:3478',
         "credential": 'Ryusia223',
         "username": 'punnybin',
     },
