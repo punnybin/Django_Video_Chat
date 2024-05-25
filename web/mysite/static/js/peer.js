@@ -259,9 +259,6 @@ const iceConfiguration = {
                         urls: "turn:43.207.223.197:3478?transport=tcp",
                         username: "punnybin",
                         credential: "Ryusia223"
-                },
-                {
-                        urls: "stun:stun.l.google.com:19302"
                 }
         ]
 };
