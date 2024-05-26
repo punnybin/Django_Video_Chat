@@ -256,9 +256,9 @@ const iceConfiguration = {
         iceServers:
         [
                 {
-                        urls: "turn:43.207.223.197:3478?transport=tcp",
-                        username: "punnybin",
-                        credential: "Ryusia223"
+                        urls: "turn:public_ip:3478?transport=tcp",
+                        username: "username",
+                        credential: "passwd"
                 }
         ]
 };
